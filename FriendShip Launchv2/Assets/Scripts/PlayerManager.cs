@@ -7,7 +7,7 @@ public class PlayerManager : MonoBehaviour
     public float speed = 1;
     Vector3 movement;
 
-    public Animator animator;
+    //public Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -16,12 +16,14 @@ public class PlayerManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void Update()
+    void Update()
     {
+        //Player flew off the screen with transform.position.y in the line below.  Made it 0 again.
         movement = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
         transform.Translate(movement * speed * Time.deltaTime);
         //Jake did this, but we should change it to L/R Triggers instead
-        animator.SetFloat("Speed", Mathf.Abs(speed));
+        //animator.SetFloat("SpeedHor", Mathf.Abs(movement.x));
+       
     }
 
     void OnCollisionEnter2D(Collision2D collision)
