@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine.Audio;
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds;
+    public Toggle s_toggle;
     void Awake()
     {
         foreach (Sound s in sounds)
@@ -15,6 +17,7 @@ public class AudioManager : MonoBehaviour
             s.source.clip = s.clip;
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
+            
             
         }
     }

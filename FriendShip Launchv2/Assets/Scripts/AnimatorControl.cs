@@ -6,6 +6,7 @@ public class AnimatorControl : MonoBehaviour
 {
 
     public Animator animator;
+    public AudioSource audiomanager;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +16,7 @@ public class AnimatorControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        walkingsfx();
         if (Input.GetKeyDown(KeyCode.W))
         {
             animator.SetBool("MoveUpBool", true);
@@ -46,6 +48,14 @@ public class AnimatorControl : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.D))
         {
             animator.SetBool("MoveRightBool", false);
+        }
+    }
+
+    public void walkingsfx()
+    {
+        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S))
+        {
+            FindObjectOfType<AudioManager>().Play("WalkOn");
         }
     }
 }

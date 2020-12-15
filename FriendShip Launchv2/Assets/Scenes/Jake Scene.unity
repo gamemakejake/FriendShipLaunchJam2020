@@ -1671,10 +1671,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: WalkOn
-    clip: {fileID: 8300000, guid: 5e11aefde950e3547accc697cabf98e4, type: 3}
+    clip: {fileID: 8300000, guid: 34fb29af18c85b24bab78888428985f2, type: 3}
     volume: 0.5
     pitch: 1
     source: {fileID: 0}
+  s_toggle: {fileID: 0}
 --- !u!1 &1440481769
 GameObject:
   m_ObjectHideFlags: 0
@@ -2757,6 +2758,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1722856641}
+  audiomanager: {fileID: 0}
 --- !u!1 &1792621788
 GameObject:
   m_ObjectHideFlags: 0
