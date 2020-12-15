@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+[RequireComponent(typeof(NavMeshAgent))]
 public class CreatureFollow : MonoBehaviour
 {
-    public NavMeshAgent agent;
+    public Creature creature;
 
     Transform player;
     public bool canFollow = false;
@@ -32,9 +33,9 @@ public class CreatureFollow : MonoBehaviour
 
     void FollowPlayer()
     {
-        if (Vector3.Distance(transform.position, player.position) > agent.stoppingDistance)
+        if (Vector3.Distance(transform.position, player.position) > creature.agent.stoppingDistance)
         {
-            agent.SetDestination(player.position);
+            creature.agent.SetDestination(player.position);
         }
     }
 }
