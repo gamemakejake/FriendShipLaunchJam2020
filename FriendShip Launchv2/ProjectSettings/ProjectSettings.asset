@@ -664,10 +664,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: ada5f4f1-d392-4eaf-a6e6-59065b827e02
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: FriendShip Launchv2
+  organizationId: unity_wq5ykuxbhutlyq
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
