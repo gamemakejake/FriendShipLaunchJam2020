@@ -18,4 +18,12 @@ public class PlayerManager : MonoBehaviour
         movement = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
         transform.Translate(movement * speed * Time.deltaTime);
     }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Interactable"))
+        {
+            Debug.Log("Interacting something");
+        }
+    }
 }
