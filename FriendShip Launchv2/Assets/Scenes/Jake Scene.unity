@@ -1539,6 +1539,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1399232509}
   - component: {fileID: 1399232508}
+  - component: {fileID: 1399232510}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -1656,6 +1657,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1399232510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1399232507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 488e7b6c597b3364980bddb6a7571e39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: WalkOn
+    clip: {fileID: 8300000, guid: 5e11aefde950e3547accc697cabf98e4, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
 --- !u!1 &1440481769
 GameObject:
   m_ObjectHideFlags: 0
