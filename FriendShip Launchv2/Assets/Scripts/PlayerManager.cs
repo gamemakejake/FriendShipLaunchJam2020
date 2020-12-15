@@ -21,7 +21,7 @@ public class PlayerManager : MonoBehaviour
         //Player flew off the screen with transform.position.y in the line below.  Made it 0 again.
         movement = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
         transform.Translate(movement * speed * Time.deltaTime);
-        //Jake did this, but we should change it to L/R Triggers instead
+ 
         //animator.SetFloat("SpeedHor", Mathf.Abs(movement.x));
        
     }
