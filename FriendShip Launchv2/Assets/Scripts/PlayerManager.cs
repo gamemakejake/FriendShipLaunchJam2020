@@ -5,10 +5,12 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour
 {
     public float speed = 1;
+    public Vector3 offset; // for interactable objects
     Vector3 movement;
 
     //public Animator animator;
-
+    GameObject interactableObject;
+    bool interact = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,16 +23,29 @@ public class PlayerManager : MonoBehaviour
         //Player flew off the screen with transform.position.y in the line below.  Made it 0 again.
         movement = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
         transform.Translate(movement * speed * Time.deltaTime);
- 
+
         //animator.SetFloat("SpeedHor", Mathf.Abs(movement.x));
-       
+        if (interact && Input.GetKey(KeyCode.Space))
+        {
+            interactableObject.transform.position = new Vector3(transform.position.x + offset.x, transform.position.y + offset.y, transform.position.z + offset.z);
+            interactableObject.transform.SetParent(transform);
+        }
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionStay(Collision collision)
     {
         if (collision.gameObject.CompareTag("Interactable"))
         {
-            Debug.Log("Interacting something");
+            interact = true;
+            interactableObject = collision.gameObject;
+        }
+    }
+
+    void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Interactable"))
+        {
+            interact = false;
         }
     }
 }
