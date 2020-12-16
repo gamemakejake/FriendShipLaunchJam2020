@@ -48,4 +48,10 @@ public class MenuManager : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene("Jake Scene");
     }
+
+    public void EndGame()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("EndScene");
+    }
 }
