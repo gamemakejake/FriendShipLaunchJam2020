@@ -39,7 +39,7 @@ public class DialogueTrigger : MonoBehaviour
     {
         Debug.Log("Trig");
         Time.timeScale = 0.25f;
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         Time.timeScale = 1f;
         dialogueBox.SetActive(false);
         talkOver = true;
