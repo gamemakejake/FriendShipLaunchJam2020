@@ -6,6 +6,7 @@ public class PlayerManager : MonoBehaviour
 {
     public float speed = 1;
     public Vector3 offset; // for interactable objects
+    public bool givesItem = false;
     Vector3 movement;
 
     //public Animator animator;
@@ -24,11 +25,14 @@ public class PlayerManager : MonoBehaviour
         movement = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
         transform.Translate(movement * speed * Time.deltaTime);
 
-        //animator.SetFloat("SpeedHor", Mathf.Abs(movement.x));
         if (interact && Input.GetKey(KeyCode.Space))
         {
             interactableObject.transform.position = new Vector3(transform.position.x + offset.x, transform.position.y + offset.y, transform.position.z + offset.z);
             interactableObject.transform.SetParent(transform);
+            if (givesItem)
+            {
+                interactableObject.SetActive(false);
+            }
         }
     }
 
