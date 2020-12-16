@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BigSadWalkR
+  m_Name: FinLeftWalkLeft
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,13 +20,13 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -3556960916540433853, guid: 31188ba9d37303e4a9723ba0b011e4a1,
+      value: {fileID: 3587864788408415792, guid: 03f5e542963972943bd8f0dfff061891,
         type: 3}
     - time: 0.33333334
-      value: {fileID: 454129700143850048, guid: 31188ba9d37303e4a9723ba0b011e4a1,
+      value: {fileID: -2770042006155682699, guid: 03f5e542963972943bd8f0dfff061891,
         type: 3}
-    - time: 0.65
-      value: {fileID: -3556960916540433853, guid: 31188ba9d37303e4a9723ba0b011e4a1,
+    - time: 0.6666667
+      value: {fileID: 3587864788408415792, guid: 03f5e542963972943bd8f0dfff061891,
         type: 3}
     attribute: m_Sprite
     path: 
@@ -47,15 +47,15 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -3556960916540433853, guid: 31188ba9d37303e4a9723ba0b011e4a1, type: 3}
-    - {fileID: 454129700143850048, guid: 31188ba9d37303e4a9723ba0b011e4a1, type: 3}
-    - {fileID: -3556960916540433853, guid: 31188ba9d37303e4a9723ba0b011e4a1, type: 3}
+    - {fileID: 3587864788408415792, guid: 03f5e542963972943bd8f0dfff061891, type: 3}
+    - {fileID: -2770042006155682699, guid: 03f5e542963972943bd8f0dfff061891, type: 3}
+    - {fileID: 3587864788408415792, guid: 03f5e542963972943bd8f0dfff061891, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.6666666
+    m_StopTime: 0.68333334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
