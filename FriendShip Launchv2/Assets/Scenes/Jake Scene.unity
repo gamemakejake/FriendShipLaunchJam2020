@@ -107,9 +107,9 @@ NavMeshSettings:
     serializedVersion: 2
     agentTypeID: 0
     agentRadius: 0.5
-    agentHeight: 2
+    agentHeight: 3
     agentSlope: 60
-    agentClimb: 5.98
+    agentClimb: 2
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
@@ -2101,6 +2101,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1865326005746581064}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &674795935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674795934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c361af09c5a27e447b12e098ac21d0fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &687869498
 GameObject:
   m_ObjectHideFlags: 0
@@ -5395,6 +5407,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1865326005756311728, guid: d8e668f20d587734786a6b4cc7fe9e8a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.49
+      objectReference: {fileID: 0}
     - target: {fileID: 1865326007604511927, guid: d8e668f20d587734786a6b4cc7fe9e8a,
         type: 3}
       propertyPath: m_Name

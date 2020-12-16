@@ -46,6 +46,6 @@ public class MenuManager : MonoBehaviour
     public void PlayGame()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("PlayScene");
+        SceneManager.LoadScene("Jake Scene");
     }
 }
