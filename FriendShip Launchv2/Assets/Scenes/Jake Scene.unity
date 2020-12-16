@@ -931,6 +931,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 222352823}
   m_CullTransparentMesh: 0
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 --- !u!1 &235796078
@@ -1008,6 +1009,8 @@ CanvasRenderer:
   m_GameObject: {fileID: 235796078}
   m_CullTransparentMesh: 0
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 5dd354f... FINAL PUSH
 --- !u!1 &240703594
 GameObject:
   m_ObjectHideFlags: 0
@@ -1436,6 +1439,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ab6b039e2bad2d4ebe6bf4519030892, type: 3}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 --- !u!1 &353416498
@@ -1568,6 +1572,8 @@ CanvasRenderer:
   m_GameObject: {fileID: 353416498}
   m_CullTransparentMesh: 0
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 5dd354f... FINAL PUSH
 --- !u!1 &382555765
 GameObject:
   m_ObjectHideFlags: 0
@@ -3019,6 +3025,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+<<<<<<< HEAD
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
@@ -3036,6 +3043,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 5.5, y: -7.13}
+  m_UseGraphicAlpha: 1
+--- !u!114 &767560635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 767560632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+>>>>>>> parent of 5dd354f... FINAL PUSH
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -5937,6 +5963,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1792621788}
   m_CullTransparentMesh: 0
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 --- !u!1 &1800488524
@@ -6198,6 +6225,8 @@ CanvasRenderer:
   m_GameObject: {fileID: 1804662841}
   m_CullTransparentMesh: 0
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of 5dd354f... FINAL PUSH
 --- !u!1 &1817953667
 GameObject:
   m_ObjectHideFlags: 0
