@@ -4,7 +4,7 @@ using UnityEngine;
 [System.Serializable]
 public class Dialogue
 {
-    public GameObject speaker;
+    public GameObject character;
     [TextArea(2, 8)]
     public string[] sentences;
 }

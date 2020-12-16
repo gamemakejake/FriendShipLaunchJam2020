@@ -12,19 +12,20 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         sentences = new Queue<string>();
+        
     }
 
     public void StartDialogue(Dialogue dialogue)
     {
 
-        speaker = dialogue.speaker;
+        speaker = dialogue.character;
         sentences.Clear();
 
         foreach (string sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
         }
-        DisplayNextSentence();
+        //DisplayNextSentence();
         if (Input.GetKeyDown("space"))
         {
             DisplayNextSentence();

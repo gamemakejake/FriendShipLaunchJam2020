@@ -5,17 +5,44 @@ using UnityEngine;
 public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
-    
+    public GameObject dialogueBox;
+    public bool talkOver = false;
+    //public GameObject goneCreature;
+    //public GameObject followCreature;
 
-    public void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player") && talkOver == false)
         {
-            FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+            //Time.timeScale = 0f;
+            
+            dialogueBox.SetActive(true);
+            StartCoroutine(Wait());
+            
+            
+
+            //if (Input.GetKeyDown(KeyCode.Space))
+            //{
+            //    Time.timeScale = 1f;
+            //    dialogueBox.SetActive(false);
+            //    goneCreature.SetActive(false);
+            //    followCreature.SetActive(true);
+
+            //}
+
+            //FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+
         }
     }
-    //public void TriggerDialogue()
-    //{
-    //    FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
-    //}
+
+    IEnumerator Wait()
+    {
+        Debug.Log("Trig");
+        Time.timeScale = 0.25f;
+        yield return new WaitForSeconds(1);
+        Time.timeScale = 1f;
+        dialogueBox.SetActive(false);
+        talkOver = true;
+
+    }
 }

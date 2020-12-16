@@ -19,14 +19,22 @@ public class CreatureFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.LookAt(Camera.main.transform);
+        
         if (canFollow)
         {
             FindPlayer();
             FollowPlayer();
         }
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            transform.LookAt(Camera.main.transform);
+            canFollow = true;
 
+        }
+    }
     void FindPlayer()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
