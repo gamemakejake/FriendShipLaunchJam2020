@@ -40,6 +40,7 @@ public class PlayerManager : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Interactable"))
         {
+            Debug.Log("Pickup");
             interact = true;
             interactableObject = collision.gameObject;
         }
